@@ -1,4 +1,4 @@
-# docker_project_on-_wordpress
+# docker_project_on_wordpress
 Under the guidance of Vimal Daga sir,I have learnt docker from begineer to expertise level.From that knowledge I have created a project using docker container.
 ##EXlpanation of Project:
 In this project,I have create two containers first is mysql database and second is wordpress where we can post our blogs and articles.I have linked the wordpress to mysql.
