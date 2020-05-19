@@ -1,0 +1,24 @@
+version: '3'
+services:
+  dbos:
+        image: mysql:5.7
+        volumes:
+             - mysql_storage_new:/var/lib/mysql
+        restart: always
+        environment:
+                MYSQL_ROOT_PASSWORD: passroot
+                MYSQL_USER: pandav
+                MYSQL_PASSWORD: redhat
+                MYSQL_DATABASE: mydb
+
+
+  wpos:
+        image: wordpress:5.1.1-php7.3-apache
+        volumes:
+                -  wp_storage_new:/var/www/html
+        restart: always
+        depends_on:
+                - dbos
+        ports:
+            - 8085:80
+
