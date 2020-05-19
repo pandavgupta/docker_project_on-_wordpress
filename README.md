@@ -17,7 +17,7 @@ Through docker-compose file of my project anyone can setup wordpress in very sim
  
 ### 2.Docker Images:
   we need two docker images for setting up the envirnment.
-  ![](screenshotsscreenshot2.png)
+  ![](screenshots/Screenshot2.png)
 
   * 1.mysql image :
   use `docker pull mysql:5.7` command to download mysql database.We are using my  sql 5.7 version as it is more compartiable with our given wordpress version.we  are pulling images from official page of docker:https://hub.docker.com/_/mysql 
@@ -29,7 +29,7 @@ You have to first install docker-compose in your system .you install it from giv
 for linux directly use this command `sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`.
 ### My docker compose file:
  
- ![](screenshot1.png)
+ ![](screenshots/Screenshot1.png)
 
  *  version:In every yml file we have to specify version,here we are using version 3 of docker compose.
  * services:This section specify the services we are using through docker compose.
@@ -45,26 +45,26 @@ for linux directly use this command `sudo curl -L "https://github.com/docker/com
  
  #### step1: download the docker-compose.yml file the above repository and go the same folder where you have downloaded this file.
 
-![](screenshot8.png)
+![](screenshots/Screenshot8.png)
 
  #### step2: open this file using following command `vi docker-compose.yml` and changes the environment like root password ,user name,etc.save the changes using `esc + x`.
 
-![](screenshot9.png)
+![](screenshots/Screenshot9.png)
 
 
  #### step3:Now run `docker compose up` command and this will setup all services.
-![](screenshot3.png)
-![](screenshot4.png)
+![](screenshots/Screenshot3.png)
+![](screenshots/Screenshot4.png)
 
  #### step4: open browser and enter your ip address of base from where you you run docker command with 8085 port number.
 
-![](screenshot5.png)
-![](screenshot6.png)
+![](screenshots/Screenshot5.png)
+![](screenshots/Screenshot6.png)
 
  **FINALLY you can see wordpress running successfully**
 
  #### For closing use this command : `docker compose down` in new terminal..
 
- ![](screenshot7.png)
+ ![](screenshots/Screenshot7.png)
 
 
