@@ -17,7 +17,7 @@ Through docker-compose file of my project anyone can setup wordpress in very sim
  
 ### 2.Docker Images:
   we need two docker images for setting up the envirnment.
-  ![](Screenshot2.png) 
+  ![](screenshotsscreenshot2.png)
 
   * 1.mysql image :
   use `docker pull mysql:5.7` command to download mysql database.We are using my  sql 5.7 version as it is more compartiable with our given wordpress version.we  are pulling images from official page of docker:https://hub.docker.com/_/mysql 
